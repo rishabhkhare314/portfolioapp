@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: poppins, sans-serif;
+}
+
+.conatiner {
+  padding: 1rem 2rem;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #1b1c37;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+nav .hamburger-menu {
+  cursor: pointer;
+}
+.hero {
+  position: relative;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.hero-section .hero-image {
+  display: none;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #1b1c37;
+  position: relative;
+}
+
+.highlight-parent {
+  position: relative;
+}
+.highlight {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+}
+
+.hero-content p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #000;
+  width: 60%;
+  margin-top: 2rem;
+  text-align: left;
+  position: relative;
+}
+
+.wave-hand img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero-content .btn-contact {
+  background: linear-gradient(to right, #b224ef, #7579ff);
+  padding: 1rem 3rem;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  margin: 2.5rem 0;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -2rem;
+  right: 0%;
+  /* left: %; */
+}
+
+.arrow img {
+  width: 10rem;
+  height: auto;
+}
+
+/* skills */
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  background: linear-gradient(to right, #b224ef, #7579ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.highlightskill-img {
+    position: absolute;
+    top: -16px;
+    right: -45px;
+}
+
+.skill-border {
+    border: 1px solid #EDEEFF;
+    margin-top: 2rem;
+    /* margin-left: rem; */
+    /* padding: 1rem; */
+}
+
+.analytics {
+    display: grid;
+}
+/* Responsive Styles */
+@media (min-width: 1024px) {
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-section .hero-image {
+    display: block;
+    width: 55%;
+    object-fit: contain;
+  }
+  .hero-section .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  .hero-content {
+    width: 45%;
+    margin: auto;
+  }
+  .arrow {
+    position: absolute;
+    bottom: -3rem;
+    right: 60%;
+  }
+  .arrow img {
+    width: 15rem;
+    height: auto;
+  }
+}
