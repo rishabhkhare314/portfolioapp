@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .items-1 {
+        background-color: lightcoral;
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+
+      .items-2 {
+        background-color: lightblue;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .items-3 {
+        background-color: lightgreen;
+      }
+
+      .items-4 {
+        background-color: lightpink;
+      }
+
+      .items-5 {
+        background-color: lightseagreen;
+      }
+
+      .items-6 {
+        background-color: rgb(183, 183, 18);
+      }
+
+      .items-7 {
+        background-color: lightsalmon;
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+      .items-8 {
+        background-color: lightgray;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item items-1">items-1</div>
+      <div class="item items-2">items-2</div>
+      <div class="item items-3">items-3</div>
+      <div class="item items-4">items-4</div>
+      <div class="item items-5">items-5</div>
+      <div class="item items-6">items-6</div>
+      <div class="item items-7">items-6</div>
+    </div>
+  </body>
+</html>
